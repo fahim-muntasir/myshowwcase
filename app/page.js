@@ -1,113 +1,472 @@
-import Image from 'next/image'
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    return (
+        <>
+            <Navbar />
+            <div className=" absolute top-20 h-[800px] right-0 left-0 bg-[#F8FAFC] z-[-1] "></div>
+            <section className="container mx-auto xl:max-w-screen-lg flex justify-between mt-20 mb-52 ">
+                <div className="w-[50%]">
+                    <h1 className="text-5xl font-semibold text-gray-700 mb-5 ">
+                        Hey there!
+                    </h1>
+                    <h2 className="text-3xl text-gray-800 mb-5">
+                        I&#39;m Fahim, a passionate <br />{" "}
+                        <span className="underline decoration-amber-400 font-medium">
+                            web application developer
+                        </span>
+                        .
+                    </h2>
+                    <h3 className="text-xl text-gray-800 leading-normal mb-5">
+                        with a strong focus on creating intuitive and efficient
+                        user experiences. With 3 years of experience in the
+                        industry, I specialize in building robust web
+                        applications that leverage the latest technologies to
+                        deliver exceptional results.
+                    </h3>
+                    <h3 className="text-xl text-gray-800 leading-normal">
+                        I have a deep understanding of HTML, CSS, and
+                        JavaScript, React js, Next js, Node js and I keep myself
+                        updated with the latest trends and best practices in the
+                        ever-evolving web development landscape.🚀
+                    </h3>
+                    <div className="text-xl mt-5">
+                        Get me on
+                        <a href="@" className="text-sky-500 ml-2">
+                            Github
+                        </a>
+                        ,
+                        <a href="@" className="text-sky-500 ml-2">
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div className="flex gap-4 mt-5">
+                        <button className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 ">
+                            Contact
+                        </button>
+                        <button className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 ">
+                            Resume
+                        </button>
+                    </div>
+                </div>
+                <div className="w-[50%] relative">
+                    <div className="absolute top-0 right-0 z-[-1] border-[3px] border-amber-400 rounded-lg w-[450px] h-[550px]"></div>
+                    <Image
+                        src="/../public/images/fahim.jpg"
+                        width={450}
+                        height={300}
+                        alt="myPic"
+                        className="ml-auto rounded-lg h-[550px] mt-8 mr-8 shadow"
+                    />
+                </div>
+            </section>
+            <Skills />
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20">
+                <h2 className=" relative font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-1 before:w-20 before:bg-amber-400 before:bottom-[-8px] before:left-0 mb-20 text-center md:text-left lg:text-left ">
+                    Portfolio
+                </h2>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+                <div className="flex flex-wrap">
+                    <div className="p-4 md:w-1/3 hover:scale-105 transition">
+                        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden relative ">
+                            {/* <div className=" absolute lg:h-48 md:h-36 w-full bg-[#a6a6a65c] top-0 right-0 left-0 hover:opacity-0"></div> */}
+                            <Image
+                                className="lg:h-48 md:h-36 w-full object-content object-center"
+                                src="/../public/images/project01.PNG"
+                                width={400}
+                                height={400}
+                                alt="portfolio"
+                            />
+                            <div className="p-6">
+                                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                    Quiz App
+                                </h1>
+                                <p className="leading-relaxed mb-3">
+                                    Photo booth fam kinfolk cold-pressed
+                                    sriracha leggings jianbing microdosing
+                                    tousled waistcoat.
+                                </p>
+                                <div className="flex items-center flex-wrap ">
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer mr-2 ">
+                                        Code↗
+                                    </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer ">
+                                        Live View↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+                    <div className="p-4 md:w-1/3 hover:scale-105 transition">
+                        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <Image
+                                className="lg:h-48 md:h-36 w-full object-content object-center"
+                                src="/../public/images/project01.PNG"
+                                width={400}
+                                height={400}
+                                alt="portfolio"
+                            />
+                            <div className="p-6">
+                                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                    Quiz App
+                                </h1>
+                                <p className="leading-relaxed mb-3">
+                                    Photo booth fam kinfolk cold-pressed
+                                    sriracha leggings jianbing microdosing
+                                    tousled waistcoat.
+                                </p>
+                                <div className="flex items-center flex-wrap ">
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer mr-2 ">
+                                        Code↗
+                                    </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer ">
+                                        Live View↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-4 md:w-1/3 hover:scale-105 transition">
+                        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <Image
+                                className="lg:h-48 md:h-36 w-full object-content object-center"
+                                src="/../public/images/project01.PNG"
+                                width={400}
+                                height={400}
+                                alt="portfolio"
+                            />
+                            <div className="p-6">
+                                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                    Quiz App
+                                </h1>
+                                <p className="leading-relaxed mb-3">
+                                    Photo booth fam kinfolk cold-pressed
+                                    sriracha leggings jianbing microdosing
+                                    tousled waistcoat.
+                                </p>
+                                <div className="flex items-center flex-wrap ">
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer mr-2 ">
+                                        Code↗
+                                    </a>
+
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer ">
+                                        Live View↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-4 md:w-1/3 hover:scale-105 transition">
+                        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <Image
+                                className="lg:h-48 md:h-36 w-full object-content object-center"
+                                src="/../public/images/project01.PNG"
+                                width={400}
+                                height={400}
+                                alt="portfolio"
+                            />
+                            <div className="p-6">
+                                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                    Quiz App
+                                </h1>
+                                <p className="leading-relaxed mb-3">
+                                    Photo booth fam kinfolk cold-pressed
+                                    sriracha leggings jianbing microdosing
+                                    tousled waistcoat.
+                                </p>
+                                <div className="flex items-center flex-wrap ">
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer mr-2 ">
+                                        Code↗
+                                    </a>
+
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer ">
+                                        Live View↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-4 md:w-1/3 hover:scale-105 transition">
+                        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <Image
+                                className="lg:h-48 md:h-36 w-full object-content object-center"
+                                src="/../public/images/project01.PNG"
+                                width={400}
+                                height={400}
+                                alt="portfolio"
+                            />
+                            <div className="p-6">
+                                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                    Quiz App
+                                </h1>
+                                <p className="leading-relaxed mb-3">
+                                    Photo booth fam kinfolk cold-pressed
+                                    sriracha leggings jianbing microdosing
+                                    tousled waistcoat.
+                                </p>
+                                <div className="flex items-center flex-wrap ">
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer mr-2 ">
+                                        Code↗
+                                    </a>
+
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer ">
+                                        Live View↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-4 md:w-1/3 hover:scale-105 transition">
+                        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <Image
+                                className="lg:h-48 md:h-36 w-full object-content object-center"
+                                src="/../public/images/project01.PNG"
+                                width={400}
+                                height={400}
+                                alt="portfolio"
+                            />
+                            <div className="p-6">
+                                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                    Quiz App
+                                </h1>
+                                <p className="leading-relaxed mb-3">
+                                    Photo booth fam kinfolk cold-pressed
+                                    sriracha leggings jianbing microdosing
+                                    tousled waistcoat.
+                                </p>
+                                <div className="flex items-center flex-wrap ">
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer mr-2 ">
+                                        Code↗
+                                    </a>
+
+                                    <a className="text-sky-400 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer ">
+                                        Live View↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className=" text-center mt-20">
+                    <a
+                        href="@"
+                        className=" border-2 border-sky-400 uppercase py-2 px-5 hover:bg-sky-400 hover:text-white transition "
+                    >
+                        More
+                    </a>
+                </div>
+            </section>
+
+            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20">
+                <div className=" relative pl-10 mb-20 ">
+                    <span className="skill-header text-gray-700 text-2xl">
+                        Reviews.
+                    </span>
+                    <div className=" absolute left-20 top-5 pl-10 ">
+                        <svg
+                            width="57"
+                            height="61"
+                            viewBox="0 0 57 61"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M27.24 59.656c3.056-4.048 6.993-7.064 11.733-8.884 1.044-.403.601-2.019-.494-1.686a27.466 27.466 0 00-7.22 3.363c4.386-6.307 6.793-13.976 7.43-21.601.826-9.907-1.403-22-8.078-29.72-.977-1.136-3.166.194-2.558 1.583C30 7.16 32.27 11.285 33.525 16.038c1.242 4.705 1.793 9.525 1.53 14.385-.434 8.056-3.296 15.458-7.17 22.389-.355-2.259-1.235-4.428-2.668-6.287-1.3-1.681-4.121-.045-2.869 1.776 2.13 3.113 3.128 6.322 2.577 10.122-.167 1.186 1.416 2.426 2.317 1.233z"
+                                    fill="#333"
+                                    fill-opacity=".85"
+                                ></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <path
+                                        transform="rotate(148.25 56.2 41.845)"
+                                        fill="#fff"
+                                        d="M56.2 41.845h35.638v49.209H56.2z"
+                                    ></path>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div className="mt-20 flex flex-wrap">
+                    <div className="mb-10 hover:scale-105 transition">
+                        <Image
+                            src="/../public/images/review1.PNG"
+                            width={550}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="mb-10 hover:scale-105 transition ml-auto">
+                        <Image
+                            src="/../public/images/review4.PNG"
+                            width={400}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="mb-10 hover:scale-105 transition">
+                        <Image
+                            src="/../public/images/review6.PNG"
+                            width={350}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="ml-auto mb-10 hover:scale-105 transition">
+                        <Image
+                            src="/../public/images/review2.PNG"
+                            width={550}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="mb-10 hover:scale-105 transition">
+                        <Image
+                            src="/../public/images/review3.PNG"
+                            width={450}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="mb-10 hover:scale-105 transition ml-auto">
+                        <Image
+                            src="/../public/images/review7.PNG"
+                            width={500}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="mb-10 hover:scale-105 transition">
+                        <Image
+                            src="/../public/images/review8.PNG"
+                            width={550}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                    <div className="mb-10 hover:scale-105 transition ml-auto">
+                        <Image
+                            src="/../public/images/review5.PNG"
+                            width={400}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md border border-amber-400 "
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20">
+                <div className=" relative pl-10 mb-20 ">
+                    <span className="skill-header text-gray-700 text-2xl">
+                        Achievement.
+                    </span>
+                    <div className=" absolute left-32 top-5 pl-10 ">
+                        <svg
+                            width="57"
+                            height="61"
+                            viewBox="0 0 57 61"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M27.24 59.656c3.056-4.048 6.993-7.064 11.733-8.884 1.044-.403.601-2.019-.494-1.686a27.466 27.466 0 00-7.22 3.363c4.386-6.307 6.793-13.976 7.43-21.601.826-9.907-1.403-22-8.078-29.72-.977-1.136-3.166.194-2.558 1.583C30 7.16 32.27 11.285 33.525 16.038c1.242 4.705 1.793 9.525 1.53 14.385-.434 8.056-3.296 15.458-7.17 22.389-.355-2.259-1.235-4.428-2.668-6.287-1.3-1.681-4.121-.045-2.869 1.776 2.13 3.113 3.128 6.322 2.577 10.122-.167 1.186 1.416 2.426 2.317 1.233z"
+                                    fill="#333"
+                                    fill-opacity=".85"
+                                ></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <path
+                                        transform="rotate(148.25 56.2 41.845)"
+                                        fill="#fff"
+                                        d="M56.2 41.845h35.638v49.209H56.2z"
+                                    ></path>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div className="flex justify-between">
+                    <div className="w-[500px]">
+                        <p className="my-8">
+                            It was a redux course. When i was learning Redux
+                            then i did this course and my mark was almost 93%. I
+                            have learned from this course Redux, Redux-Toolkit,
+                            Redux-Thunk, React-Redux, RTK Query.{" "}
+                            <a href="@" className="text-sky-500">
+                                To verify 🏆
+                            </a>
+                        </p>
+                        <Image
+                            src="/../public/images/Certificate.jpeg"
+                            width={500}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md hover:scale-105 transition"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src="/../public/images/Recommendation.jpg"
+                            width={450}
+                            height={150}
+                            alt="review"
+                            className=" shadow-md hover:scale-105 transition "
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20 flex justify-between">
+                <div className="w-[600px]">
+                    <p className="mb-10">
+                        I am interested in working with any company that thinks
+                        my skill will be helpful for them. If you are looking
+                        for someone like me, please let me know Or you can just
+                        say hi to me.
+                    </p>
+
+                    <a
+                        href="milto:fahimmuntasir0909@gmail.com"
+                        className="bg-sky-500 py-3 px-4 text-white hover:bg-sky-600 "
+                    >
+                        Contact Me
+                    </a>
+                </div>
+
+                <div>
+                    <h2 className="text-2xl text-gray-800 mb-2">
+                        💌 Email Address
+                    </h2>
+                    <span>fahimmuntasir0909@gmail.com</span>
+                </div>
+            </section>
+            <Footer />
+        </>
+    );
 }
