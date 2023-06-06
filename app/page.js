@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <Navbar />
             <div className=" absolute top-20 h-[800px] right-0 left-0 bg-[#F8FAFC] z-[-1] "></div>
-            <section className="container mx-auto xl:max-w-screen-lg flex justify-between mt-20 mb-52 ">
+            <section className="container mx-auto xl:max-w-screen-lg flex justify-between mt-20 mb-20 ">
                 <div className="w-[50%]">
                     <h1 className="text-5xl font-semibold text-gray-700 mb-5 ">
                         Hey there!
@@ -65,8 +65,11 @@ export default function Home() {
             </section>
             <Skills />
 
-            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20">
-                <h2 className=" relative font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-1 before:w-20 before:bg-amber-400 before:bottom-[-8px] before:left-0 mb-20 text-center md:text-left lg:text-left ">
+            <section
+                id="portfolio"
+                className="container mx-auto xl:max-w-screen-lg pt-20 mt-20 mb-20"
+            >
+                <h2 className=" relative font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-1 before:w-20 before:bg-amber-400 before:bottom-[-8px] before:left-0 mb-20 text-center md:text-left lg:text-left text-gray-800 ">
                     Portfolio
                 </h2>
 
@@ -269,7 +272,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20">
+            <section
+                id="reviews"
+                className="container mx-auto xl:max-w-screen-lg pt-20 mt-20 mb-20"
+            >
                 <div className=" relative pl-10 mb-20 ">
                     <span className="skill-header text-gray-700 text-2xl">
                         Reviews.
@@ -378,7 +384,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20">
+            <section
+                id="achievement"
+                className="container mx-auto xl:max-w-screen-lg pt-20 mt-20 mb-20"
+            >
                 <div className=" relative pl-10 mb-20 ">
                     <span className="skill-header text-gray-700 text-2xl">
                         Achievement.
@@ -442,28 +451,37 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="container mx-auto xl:max-w-screen-lg mt-40 mb-20 flex justify-between">
-                <div className="w-[600px]">
-                    <p className="mb-10">
-                        I am interested in working with any company that thinks
-                        my skill will be helpful for them. If you are looking
-                        for someone like me, please let me know Or you can just
-                        say hi to me.
-                    </p>
+            <section
+                id="contact"
+                className="container mx-auto xl:max-w-screen-lg mt-40 mb-20"
+            >
+                <h2 className=" relative font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-1 before:w-20 before:bg-amber-400 before:bottom-[-8px] before:left-0 mb-20 text-center md:text-left lg:text-left text-gray-800 ">
+                    Contact Info
+                </h2>
 
-                    <a
-                        href="milto:fahimmuntasir0909@gmail.com"
-                        className="bg-sky-500 py-3 px-4 text-white hover:bg-sky-600 "
-                    >
-                        Contact Me
-                    </a>
-                </div>
+                <div className=" flex justify-between">
+                    <div className="w-[600px]">
+                        <p className="mb-10">
+                            I am interested in working with any company that
+                            thinks my skill will be helpful for them. If you are
+                            looking for someone like me, please let me know Or
+                            you can just say hi to me.
+                        </p>
 
-                <div>
-                    <h2 className="text-2xl text-gray-800 mb-2">
-                        💌 Email Address
-                    </h2>
-                    <span>fahimmuntasir0909@gmail.com</span>
+                        <a
+                            href="milto:fahimmuntasir0909@gmail.com"
+                            className="bg-sky-500 py-3 px-4 text-white hover:bg-sky-600 "
+                        >
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div>
+                        <h2 className="text-2xl text-gray-800 mb-2">
+                            💌 Email Address
+                        </h2>
+                        <span>fahimmuntasir0909@gmail.com</span>
+                    </div>
                 </div>
             </section>
             <Footer />

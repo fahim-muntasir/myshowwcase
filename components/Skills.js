@@ -1,6 +1,9 @@
 export default function Skills() {
     return (
-        <section className="container mx-auto xl:max-w-screen-lg">
+        <section
+            id="skills"
+            className="container mx-auto xl:max-w-screen-lg pt-32"
+        >
             <div className=" relative pl-10 mb-20 ">
                 <span className="skill-header text-gray-700 text-2xl">
                     My Skills.
