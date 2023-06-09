@@ -92,17 +92,16 @@ export default function Home() {
                 <div className="flex flex-wrap px-5 md:px-0 lg:px-0">
                     <div className="p-4 md:w-1/3 hover:scale-105 transition">
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden relative ">
-                            {/* <div className=" absolute lg:h-48 md:h-36 w-full bg-[#a6a6a65c] top-0 right-0 left-0 hover:opacity-0"></div> */}
                             <Image
                                 className="lg:h-48 md:h-36 w-full object-content object-center"
-                                src="/../public/images/project01.PNG"
+                                src="/../public/images/p1.jpg"
                                 width={400}
                                 height={400}
                                 alt="portfolio"
                             />
                             <div className="p-6">
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Quiz App
+                                    Project 1
                                 </h1>
                                 <p className="leading-relaxed mb-3">
                                     Photo booth fam kinfolk cold-pressed
@@ -126,14 +125,14 @@ export default function Home() {
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <Image
                                 className="lg:h-48 md:h-36 w-full object-content object-center"
-                                src="/../public/images/project01.PNG"
+                                src="/../public/images/p2.jpg"
                                 width={400}
                                 height={400}
                                 alt="portfolio"
                             />
                             <div className="p-6">
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Quiz App
+                                    Project 2
                                 </h1>
                                 <p className="leading-relaxed mb-3">
                                     Photo booth fam kinfolk cold-pressed
@@ -157,14 +156,14 @@ export default function Home() {
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <Image
                                 className="lg:h-48 md:h-36 w-full object-content object-center"
-                                src="/../public/images/project01.PNG"
+                                src="/../public/images/p3.jpg"
                                 width={400}
                                 height={400}
                                 alt="portfolio"
                             />
                             <div className="p-6">
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Quiz App
+                                    Project 3
                                 </h1>
                                 <p className="leading-relaxed mb-3">
                                     Photo booth fam kinfolk cold-pressed
@@ -188,14 +187,14 @@ export default function Home() {
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <Image
                                 className="lg:h-48 md:h-36 w-full object-content object-center"
-                                src="/../public/images/project01.PNG"
+                                src="/../public/images/p3.jpg"
                                 width={400}
                                 height={400}
                                 alt="portfolio"
                             />
                             <div className="p-6">
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Quiz App
+                                    Project 4
                                 </h1>
                                 <p className="leading-relaxed mb-3">
                                     Photo booth fam kinfolk cold-pressed
@@ -219,14 +218,14 @@ export default function Home() {
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <Image
                                 className="lg:h-48 md:h-36 w-full object-content object-center"
-                                src="/../public/images/project01.PNG"
+                                src="/../public/images/p2.jpg"
                                 width={400}
                                 height={400}
                                 alt="portfolio"
                             />
                             <div className="p-6">
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Quiz App
+                                    Project 5
                                 </h1>
                                 <p className="leading-relaxed mb-3">
                                     Photo booth fam kinfolk cold-pressed
@@ -250,14 +249,14 @@ export default function Home() {
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <Image
                                 className="lg:h-48 md:h-36 w-full object-content object-center"
-                                src="/../public/images/project01.PNG"
+                                src="/../public/images/p1.jpg"
                                 width={400}
                                 height={400}
                                 alt="portfolio"
                             />
                             <div className="p-6">
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Quiz App
+                                    Project 6
                                 </h1>
                                 <p className="leading-relaxed mb-3">
                                     Photo booth fam kinfolk cold-pressed
