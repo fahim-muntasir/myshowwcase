@@ -7,9 +7,9 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <div className=" absolute top-20 h-[800px] right-0 left-0 bg-[#F8FAFC] z-[-1] "></div>
-            <section className="container mx-auto xl:max-w-screen-lg flex justify-between mt-20 mb-20 ">
-                <div className="w-[50%]">
+            <div className=" absolute top-20 h-[1400px] md:h-[800px] lg:h-[800px] right-0 left-0 bg-[#F8FAFC] z-[-1] "></div>
+            <section className="container mx-auto xl:max-w-screen-lg md:flex lg:flex md:justify-between lg:justify-between mt-10 md:mt-20 lg:mt-20 mb-20 ">
+                <div className="md:w-[50%] lg:w-[50%] px-5 md:px-0 lg:px-0">
                     <h1 className="text-5xl font-semibold text-gray-700 mb-5 ">
                         Hey there!
                     </h1>
@@ -66,14 +66,14 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="w-[50%] relative">
-                    <div className="absolute top-0 right-0 z-[-1] border-[3px] border-amber-400 rounded-lg w-[450px] h-[550px]"></div>
+                <div className="md:w-[50%] lg:w-[50%] relative px-5">
+                    <div className="absolute top-10 md:top-0 lg:top-0 md:right-0 lg:right-0 z-[-1] border-[3px] border-amber-400 rounded-lg w-96 h-[520px] md:w-[450px] lg:w-[450] md:h-[550px] lg:h-[550px]"></div>
                     <Image
                         src="/../public/images/fahim.jpg"
                         width={450}
                         height={300}
                         alt="myPic"
-                        className="ml-auto rounded-lg h-[550px] mt-8 mr-8 shadow"
+                        className="md:ml-auto lg:ml-auto rounded-lg h-[520px] w-96 md:w-[450px] lg:[450px] md:h-[550px] lg:h-[550px] md:mt-8 lg:mt-8 md:mr-8 lg:mr-8 shadow mt-20 ml-10"
                     />
                 </div>
             </section>
@@ -83,11 +83,13 @@ export default function Home() {
                 id="portfolio"
                 className="container mx-auto xl:max-w-screen-lg pt-20 mt-20 mb-20"
             >
-                <h2 className=" relative font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-1 before:w-20 before:bg-amber-400 before:bottom-[-8px] before:left-0 mb-20 text-center md:text-left lg:text-left text-gray-800 ">
-                    Portfolio
-                </h2>
+                <div className=" text-center md:text-left lg:text-left ">
+                    <h2 className=" relative inline-block font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-4 before:z-[-1] before:w-full  before:bg-amber-400 before:bottom-[0px] md:before:left-0 lg:before:left-0 mb-20 md:text-left lg:text-left text-gray-800 ">
+                        Portfolio
+                    </h2>
+                </div>
 
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap px-5 md:px-0 lg:px-0">
                     <div className="p-4 md:w-1/3 hover:scale-105 transition">
                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden relative ">
                             {/* <div className=" absolute lg:h-48 md:h-36 w-full bg-[#a6a6a65c] top-0 right-0 left-0 hover:opacity-0"></div> */}
@@ -323,7 +325,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="mt-20 flex flex-wrap">
+                <div className="mt-20 flex flex-wrap px-5 md:px-0 lg:px-0">
                     <div className="mb-10 hover:scale-105 transition">
                         <Image
                             src="/../public/images/review1.PNG"
@@ -435,14 +437,18 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex justify-between">
-                    <div className="w-[500px]">
+                <div className="md:flex lg:flex md:justify-between lg:justify-between">
+                    <div className=" w-full px-5 md:px-0 lg:px-0 md:w-[500px] lg:w-[500px] mb-10 md:mb-0 lg:mb-0">
                         <p className="my-8">
                             It was a redux course. When i was learning Redux
                             then i did this course and my mark was almost 93%. I
                             have learned from this course Redux, Redux-Toolkit,
                             Redux-Thunk, React-Redux, RTK Query.{" "}
-                            <a href="@" className="text-sky-500">
+                            <a
+                                href="https://learnwithsumit.com/certificates/verify/LWSCTXN-5YK1NQ5Q?fbclid=IwAR2c08Oq5p_J0K9affKQ0MSKsCWEJWTG2MbxFJaAZNWlaaSzH_fcLQarkiQ"
+                                target="blank"
+                                className="text-sky-500"
+                            >
                                 To verify 🏆
                             </a>
                         </p>
@@ -454,13 +460,13 @@ export default function Home() {
                             className=" shadow-md hover:scale-105 transition"
                         />
                     </div>
-                    <div>
+                    <div className="px-5 md:px-0 lg:px-0">
                         <Image
                             src="/../public/images/Recommendation.jpg"
                             width={450}
                             height={150}
                             alt="review"
-                            className=" shadow-md hover:scale-105 transition "
+                            className="shadow-md hover:scale-105 transition w-full md:w-[450px] lg:w-[450px]"
                         />
                     </div>
                 </div>
@@ -470,12 +476,14 @@ export default function Home() {
                 id="contact"
                 className="container mx-auto xl:max-w-screen-lg mt-40 mb-20"
             >
-                <h2 className=" relative font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-1 before:w-20 before:bg-amber-400 before:bottom-[-8px] before:left-0 mb-20 text-center md:text-left lg:text-left text-gray-800 ">
-                    Contact Info
-                </h2>
+                <div className=" text-center md:text-left lg:text-left ">
+                    <h2 className=" relative inline-block font-semibold text-3xl uppercase before:content-[''] before:absolute before:h-4 before:z-[-1] before:w-full  before:bg-amber-400 before:bottom-[0px] md:before:left-0 lg:before:left-0 mb-20 md:text-left lg:text-left text-gray-800 ">
+                        Contact Info
+                    </h2>
+                </div>
 
-                <div className=" flex justify-between items-center ">
-                    <div className="w-[600px]">
+                <div className=" md:flex lg:flex  md:justify-between lg:justify-between md:items-center lg:items-center px-5 md:px-0 lg:px-0">
+                    <div className="md:w-[600px] lg:w-[600px] mb-10 md:mb-0 lg:mb-0">
                         <p className="mb-10">
                             I am interested in working with any company that
                             thinks my skill will be helpful for them. If you are
