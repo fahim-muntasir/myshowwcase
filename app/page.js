@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
+import fahim from "@/public/images/fahim.jpg";
 import Image from "next/image";
 
 export default function Home() {
@@ -69,7 +70,7 @@ export default function Home() {
                 <div className="md:w-[50%] lg:w-[50%] relative px-5">
                     <div className="absolute top-10 md:top-0 lg:top-0 md:right-0 lg:right-0 z-[-1] border-[3px] border-amber-400 rounded-lg w-96 h-[520px] md:w-[450px] lg:w-[450] md:h-[550px] lg:h-[550px]"></div>
                     <Image
-                        src="/../public/images/fahim.jpg"
+                        src={fahim}
                         width={450}
                         height={300}
                         alt="myPic"
