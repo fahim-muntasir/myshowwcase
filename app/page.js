@@ -35,21 +35,35 @@ export default function Home() {
                     </h3>
                     <div className="text-xl mt-5">
                         Get me on
-                        <a href="@" className="text-sky-500 ml-2">
+                        <a
+                            href="https://github.com/fahim-muntasir"
+                            target="blank"
+                            className="text-sky-500 ml-2"
+                        >
                             Github
                         </a>
                         ,
-                        <a href="@" className="text-sky-500 ml-2">
+                        <a
+                            href="https://www.linkedin.com/in/fahim-muntasir0909"
+                            target="blank"
+                            className="text-sky-500 ml-2"
+                        >
                             LinkedIn
                         </a>
                     </div>
                     <div className="flex gap-4 mt-5">
-                        <button className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 ">
+                        <a
+                            href="mailto:fahimmuntasir0909@gmail.com"
+                            className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 "
+                        >
                             Contact
-                        </button>
-                        <button className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 ">
+                        </a>
+                        <a
+                            href="@"
+                            className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 "
+                        >
                             Resume
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className="w-[50%] relative">
@@ -264,7 +278,8 @@ export default function Home() {
 
                 <div className=" text-center mt-20">
                     <a
-                        href="@"
+                        href="https://github.com/fahim-muntasir"
+                        target="blank"
                         className=" border-2 border-sky-400 uppercase py-2 px-5 hover:bg-sky-400 hover:text-white transition "
                     >
                         More
@@ -459,7 +474,7 @@ export default function Home() {
                     Contact Info
                 </h2>
 
-                <div className=" flex justify-between">
+                <div className=" flex justify-between items-center ">
                     <div className="w-[600px]">
                         <p className="mb-10">
                             I am interested in working with any company that
@@ -469,7 +484,7 @@ export default function Home() {
                         </p>
 
                         <a
-                            href="milto:fahimmuntasir0909@gmail.com"
+                            href="mailto:fahimmuntasir0909@gmail.com"
                             className="bg-sky-500 py-3 px-4 text-white hover:bg-sky-600 "
                         >
                             Contact Me
@@ -477,10 +492,20 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <h2 className="text-2xl text-gray-800 mb-2">
-                            💌 Email Address
-                        </h2>
-                        <span>fahimmuntasir0909@gmail.com</span>
+                        <div className="mb-2">
+                            <h2 className="text-2xl text-gray-800">
+                                Email Address
+                            </h2>
+                            <span>fahimmuntasir0909@gmail.com</span>
+                        </div>
+                        <div className="mb-2">
+                            <h2 className="text-2xl text-gray-800">Skype</h2>
+                            <span>live:.cid.67d5ce38182c1db0</span>
+                        </div>
+                        <div>
+                            <h2 className="text-2xl text-gray-800">Address</h2>
+                            <span>Rupatoly, Barishal, Bangladesh.</span>
+                        </div>
                     </div>
                 </div>
             </section>
