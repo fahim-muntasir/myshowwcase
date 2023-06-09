@@ -4,23 +4,45 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar() {
     const [isHide, setIsHide] = useState(false);
+    const [showNavBar, setShowNavBar] = useState(true);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     useEffect(() => {
+        // for hide mobile menu
         function handleClickOutside(event) {
             if (isHide && !event.target.closest(".responsiveMobileMenu")) {
                 setIsHide(false);
             }
         }
-
         document.addEventListener("click", handleClickOutside);
+
+        // for show menu when user will scrool top
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                setShowNavBar(true);
+            } else {
+                setShowNavBar(false);
+            }
+
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
             document.removeEventListener("click", handleClickOutside);
+            window.removeEventListener("scroll", handleScroll);
         };
-    }, [isHide]);
+    }, [isHide, prevScrollPos]);
 
     return (
-        <header className="body-font bg-[#F8FAFC]">
+        <header
+            className={`body-font bg-[#F8FAFC] fixed w-full z-50 transition-all duration-400 backdrop-filter backdrop-blur-lg bg-opacity-80 ${
+                showNavBar ? "top-0" : "-top-24"
+            }`}
+        >
             <div className="container mx-auto xl:max-w-screen-lg flex justify-between md:flex-wrap lg:flex-wrap p-5 md:flex-row items-center relative">
                 <a className="flex title-font font-medium items-center text-sky-500 logo-text text-5xl cursor-pointer ">
                     FM
