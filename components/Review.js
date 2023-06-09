@@ -1,11 +1,11 @@
-import review1 from "@/public/images/review1.png";
-import review2 from "@/public/images/review2.png";
-import review3 from "@/public/images/review3.png";
-import review4 from "@/public/images/review4.png";
-import review5 from "@/public/images/review5.png";
-import review6 from "@/public/images/review6.png";
-import review7 from "@/public/images/review7.png";
-import review8 from "@/public/images/review8.png";
+import review1 from "@/public/images/review1.PNG";
+import review2 from "@/public/images/review2.PNG";
+import review3 from "@/public/images/review3.PNG";
+import review4 from "@/public/images/review4.PNG";
+import review5 from "@/public/images/review5.PNG";
+import review6 from "@/public/images/review6.PNG";
+import review7 from "@/public/images/review7.PNG";
+import review8 from "@/public/images/review8.PNG";
 import Image from "next/image";
 
 export default function Review() {
