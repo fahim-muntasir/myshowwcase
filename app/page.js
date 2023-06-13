@@ -12,7 +12,7 @@ export default function Home() {
         <>
             <Navbar />
             <div className=" absolute top-20 h-[1400px] md:h-[800px] lg:h-[800px] right-0 left-0 bg-[#F8FAFC] z-[-1] "></div>
-            <section className="container mx-auto xl:max-w-screen-lg md:flex lg:flex md:justify-between lg:justify-between mt-28 md:mt-36 lg:mt-36 mb-20 ">
+            <section className="container mx-auto xl:max-w-screen-lg md:flex lg:flex md:justify-between lg:justify-between mt-28 md:mt-[135px] lg:mt-[135px] mb-20 ">
                 <div className="md:w-[50%] lg:w-[50%] px-5 md:px-0 lg:px-0">
                     <h1 className="text-5xl font-semibold text-gray-700 mb-5 ">
                         Hey there!
@@ -63,14 +63,14 @@ export default function Home() {
                             Contact
                         </a>
                         <a
-                            href="@"
+                            href="https://drive.google.com/file/d/1rzq0Hxh9NvVco5IYxc4Zp51XmXwmvQ2m/view?usp=sharing"
                             className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 "
                         >
                             Resume
                         </a>
                     </div>
                 </div>
-                <div className="md:w-[50%] lg:w-[50%] relative px-5">
+                <div className="md:w-[50%] lg:w-[50%] relative px-5 mt-0 md:-mt-[40px] lg:-mt-[40px]">
                     <div className="absolute top-10 md:top-0 lg:top-0 md:right-0 lg:right-0 z-[-1] border-[3px] border-amber-400 rounded-lg w-96 h-[520px] md:w-[450px] lg:w-[450] md:h-[550px] lg:h-[550px]"></div>
                     <Image
                         src={fahim}
