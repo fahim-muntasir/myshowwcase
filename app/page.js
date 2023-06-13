@@ -64,6 +64,7 @@ export default function Home() {
                         </a>
                         <a
                             href="https://drive.google.com/file/d/1rzq0Hxh9NvVco5IYxc4Zp51XmXwmvQ2m/view?usp=sharing"
+                            target="blank"
                             className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 "
                         >
                             Resume
