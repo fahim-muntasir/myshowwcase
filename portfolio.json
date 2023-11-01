@@ -1,0 +1,29 @@
+[
+  {
+    "_id": 1,
+    "name": "FunMusic Application",
+    "image": "funMusic.jpg",
+    "description": "With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.",
+    "videoLink": "project1.mp4",
+    "technology": [
+      {
+        "name": "React.js",
+        "color": "#149eca"
+      },
+      {
+        "name": "Tone.js",
+        "color": "#f734d7"
+      },
+      {
+        "name": "TailwindCSS",
+        "color": "#38bdf8"
+      },
+      {
+        "name": "json-server",
+        "color": "black"
+      }
+    ],
+    "liveLink": "",
+    "githubLink": "https://github.com/fahim-muntasir/make-music"
+  }
+]
