@@ -25,10 +25,10 @@ export default function Portfolio({
         <div>
           <Image
             src={`/images/${data?.image}`}
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             alt="myPic"
-            className=" h-44 w-72 md:h-48 lg:h-48 md:w-80 lg:w-80 shadow-[0.2rem_0.2rem_4rem_rgba(0,0,0,.1)] object-content object-center rounded-md scale-95 group-hover:scale-100 transition"
+            className="h-48 w-72 shadow-[0.2rem_0.2rem_4rem_rgba(0,0,0,.1)] object-content object-center rounded-md scale-95 group-hover:scale-100 transition"
           />
         </div>
         <div className="absolute transition shadow-[0.2rem_0.2rem_4rem_rgba(0,0,0,.1)] right-2 flex items-center justify-center rounded-full w-12 h-12 bg-white text-3xl opacity-0 group-hover:opacity-100 ">

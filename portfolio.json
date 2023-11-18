@@ -25,5 +25,32 @@
     ],
     "liveLink": "",
     "githubLink": "https://github.com/fahim-muntasir/make-music"
+  },
+  {
+    "_id": 2,
+    "name": "Quiz Maker",
+    "image": "project2.jpg",
+    "description": "I'm excited to present another project in front of you all. This is a quiz web app. What does this project do and which problem solves it? well, sometimes we need to create quiz sets for students or friends and share that quiz with each other to participate. This web app does the same thing.",
+    "videoLink": "project2.mp4",
+    "technology": [
+      {
+        "name": "React.js",
+        "color": "#149eca"
+      },
+      {
+        "name": "TailwindCSS",
+        "color": "#38bdf8"
+      },
+      {
+        "name": "Redux",
+        "color": "#764abc"
+      },
+      {
+        "name": "Supabase",
+        "color": "#3ecf90"
+      }
+    ],
+    "liveLink": "https://endearing-wisp-deda6d.netlify.app",
+    "githubLink": "https://github.com/fahim-muntasir/quiz-application"
   }
 ]

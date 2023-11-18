@@ -31,7 +31,7 @@ function ProjectModal({ isOpen, onClose, data }) {
                 controls
                 className="w-full h[14rem] md:h-80 lg:h-80"
               >
-                <source src="/videos/project1.mp4" type="video/mp4" />
+                <source src={`/videos/${data?.videoLink}`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
