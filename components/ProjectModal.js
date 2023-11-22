@@ -10,8 +10,9 @@ function ProjectModal({ isOpen, onClose, data }) {
         <Modal.Header className="py-3">
           <h2>{data?.name}</h2>
           <div className="flex gap-2 mt-2">
-            {data?.technology?.map((tec) => (
+            {data?.technology?.map((tec, index) => (
               <span
+                key={index}
                 style={{
                   color: tec.color,
                   border: `1px solid ${tec.color}`,
