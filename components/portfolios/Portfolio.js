@@ -1,41 +1,56 @@
 import React from "react";
-import Image from "next/image";
-import { BsArrowRight } from "react-icons/bs";
-import ProjectModal from "../ProjectModal";
+import { FaGithub, FaEye } from "react-icons/fa";
 
-export default function Portfolio({
-  openModalHandler,
-  isModalOpen,
-  closeModal,
-  data,
-}) {
+export default function Portfolio_new({ data }) {
+  const { name, summary, technology, liveLink, githubLink } = data || {};
   return (
-    <>
-      <div
-        onClick={openModalHandler}
-        className=" relative rounded-lg flex shadow-[0.2rem_0.2rem_4rem_rgba(0,0,0,.1)] p-5 justify-between items-center cursor-pointer bg-white bg-gradient-to-r from-sky-200 to-sky-400 hover:from-sky-400 hover:to-sky-200 group "
-      >
-        <div>
-          <h2
-            className={` font-semibold text-3xl md:text-4xl lg:text-4xl text-gray-800 leading-6 `}
-          >
-            {data?.name}
-          </h2>
-        </div>
-        <div>
-          <Image
-            src={`/images/${data?.image}`}
-            width={100}
-            height={100}
-            alt="myPic"
-            className="h-48 w-72 shadow-[0.2rem_0.2rem_4rem_rgba(0,0,0,.1)] object-content object-center rounded-md scale-95 group-hover:scale-100 transition"
-          />
-        </div>
-        <div className="absolute transition shadow-[0.2rem_0.2rem_4rem_rgba(0,0,0,.1)] right-2 flex items-center justify-center rounded-full w-12 h-12 bg-white text-3xl opacity-0 group-hover:opacity-100 ">
-          <BsArrowRight />
+    <div className="border-dashed border-2 rounded-lg px-3 mb-5 grid grid-rows-3 gap-3 h-auto py-5 cursor-pointer transition duration-300 ease-in-out hover:bg-[#F8FAFC] relative group ">
+      <div className=" absolute right-2 top-2 border border-dashed rounded-full text-xl bg-white hidden group-hover:block ">
+        <div className="flex gap-5 py-1 px-3">
+          {liveLink && (
+            <a href={liveLink} target="_blank">
+              <FaEye className=" hover:scale-110 " />
+            </a>
+          )}
+          {githubLink && (
+            <a href={githubLink} target="_blank">
+              <FaGithub className=" hover:scale-110 " />
+            </a>
+          )}
         </div>
       </div>
-      <ProjectModal isOpen={isModalOpen} onClose={closeModal} data={data} />
-    </>
+      <div className="flex items-center">
+        <h2 className="text-lg font-medium">{name}</h2>
+      </div>
+      <div>
+        <p className="text-sm font-light tracking-wide line-clamp-3 leading-6 ">
+          {summary}
+        </p>
+      </div>
+      <div className="flex justify-start items-center gap-3">
+        {technology
+          .filter((tech) => tech?.icon)
+          .map((item, index) => (
+            <div
+              key={index}
+              className="w-10 h-10 rounded-full border-dashed border-2 flex justify-center items-center text-2xl"
+            >
+              {item.icon}
+            </div>
+          ))}
+        {/* <div className="w-10 h-10 rounded-full border-dashed border-2 flex justify-center items-center text-2xl">
+          <FaReact />
+        </div>
+        <div className="w-10 h-10 rounded-full border-dashed border-2 flex justify-center items-center text-2xl">
+          <SiTailwindcss />
+        </div>
+        <div className="w-10 h-10 rounded-full border-dashed border-2 flex justify-center items-center text-2xl">
+          <SiRedux />
+        </div>
+        <div className="w-10 h-10 rounded-full border-dashed border-2 flex justify-center items-center text-2xl">
+          <SiSupabase />
+        </div> */}
+      </div>
+    </div>
   );
 }

@@ -1,7 +1,34 @@
 [
   {
-    "_id": 1,
-    "name": "FunMusic Application",
+    "id": 1,
+    "name": "Quiz Maker",
+    "image": "project2.jpg",
+    "description": "I'm excited to present another project in front of you all. This is a quiz web app. What does this project do and which problem solves it? well, sometimes we need to create quiz sets for students or friends and share that quiz with each other to participate. This web app does the same thing.",
+    "videoLink": "project2.mp4",
+    "technology": [
+      {
+        "name": "React.js",
+        "color": "#149eca"
+      },
+      {
+        "name": "TailwindCSS",
+        "color": "#38bdf8"
+      },
+      {
+        "name": "Redux",
+        "color": "#764abc"
+      },
+      {
+        "name": "Supabase",
+        "color": "#3ecf90"
+      }
+    ],
+    "liveLink": "https://endearing-wisp-deda6d.netlify.app",
+    "githubLink": "https://github.com/fahim-muntasir/quiz-application"
+  },
+  {
+    "id": 2,
+    "name": "Project Manager",
     "image": "funMusic.jpg",
     "description": "With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.",
     "videoLink": "project1.mp4",
@@ -27,30 +54,30 @@
     "githubLink": "https://github.com/fahim-muntasir/make-music"
   },
   {
-    "_id": 2,
-    "name": "Quiz Maker",
-    "image": "project2.jpg",
-    "description": "I'm excited to present another project in front of you all. This is a quiz web app. What does this project do and which problem solves it? well, sometimes we need to create quiz sets for students or friends and share that quiz with each other to participate. This web app does the same thing.",
-    "videoLink": "project2.mp4",
+    "id": 3,
+    "name": "MusicHub",
+    "image": "funMusic.jpg",
+    "description": "With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.",
+    "videoLink": "project1.mp4",
     "technology": [
       {
         "name": "React.js",
         "color": "#149eca"
       },
       {
+        "name": "Tone.js",
+        "color": "#f734d7"
+      },
+      {
         "name": "TailwindCSS",
         "color": "#38bdf8"
       },
       {
-        "name": "Redux",
-        "color": "#764abc"
-      },
-      {
-        "name": "Supabase",
-        "color": "#3ecf90"
+        "name": "json-server",
+        "color": "black"
       }
     ],
-    "liveLink": "https://endearing-wisp-deda6d.netlify.app",
-    "githubLink": "https://github.com/fahim-muntasir/quiz-application"
+    "liveLink": "",
+    "githubLink": "https://github.com/fahim-muntasir/make-music"
   }
 ]
