@@ -56,6 +56,7 @@ export default function Navbar() {
             width={48}
             height={50}
             quality={100}
+            className="w-9 md:w-12 lg:w-12"
           />
         </a>
         <nav className="hidden md:ml-auto md:flex lg:flex gap-5 flex-wrap items-center font-medium text-sm uppercase justify-center text-gray-800 ">
