@@ -12,8 +12,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className=" absolute top-20 h-[1400px] md:h-[800px] lg:h-[800px] right-0 left-0 bg-[#F8FAFC] z-[-1] "></div>
-      <section className="container mx-auto xl:max-w-screen-lg md:flex lg:flex md:justify-between lg:justify-between mt-28 md:mt-[135px] lg:mt-[135px] mb-20 ">
+      <div className=" absolute top-20 h-[1500px] md:h-[800px] lg:h-[800px] right-0 left-0 z-[-1] custom-background bg-red-300"></div>
+      <section
+        className="container mx-auto xl:max-w-screen-lg md:flex lg:flex md:justify-between lg:justify-between mt-40 md:mt-[190px] lg:mt-[190px] mb-20"
+      >
         <div className="md:w-[50%] lg:w-[50%] px-5 md:px-0 lg:px-0">
           <h1 className="text-5xl font-semibold text-gray-700 mb-5 ">
             Hey there!

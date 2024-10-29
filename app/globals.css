@@ -56,3 +56,16 @@ body {
   );
   pointer-events: none;
 }
+
+.custom-background {
+  background-image: url('/images/bg2.jpg'); /* Adjust the path as needed */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  height: 100%; /* Set your desired height */
+}
+
+@media only screen and (max-width: 770px){
+	.custom-background {
+    height: 1330px;
+  }
+}
