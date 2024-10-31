@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 // import Project from "@/components/Project";
 import Review from "@/components/Review";
 import Skills from "@/components/Skills";
-import fahim from "@/public/images/fahim.jpg";
+import fahim from "@/public/images/fahimmuntasir.png";
 import Image from "next/image";
 import PortfolioList from "@/components/portfolios/PortfolioList";
 
@@ -17,7 +17,7 @@ export default function Home() {
         className="container mx-auto xl:max-w-screen-lg md:flex lg:flex md:justify-between lg:justify-between mt-40 md:mt-[190px] lg:mt-[190px] mb-20"
       >
         <div className="md:w-[50%] lg:w-[50%] px-5 md:px-0 lg:px-0">
-          <h1 className="text-5xl font-semibold text-gray-700 mb-5 ">
+          <h1 className="text-[2.5rem] font-semibold text-gray-800 mb-3 ">
             Hey there!
           </h1>
           <h2 className="text-3xl text-gray-800 mb-5">
@@ -73,13 +73,12 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-[50%] lg:w-[50%] relative px-5 mt-0 md:-mt-[40px] lg:-mt-[40px]">
-          <div className="absolute top-10 md:top-0 lg:top-0 md:right-0 lg:right-0 z-[-1] border-[3px] border-amber-400 rounded-lg w-96 h-[520px] md:w-[450px] lg:w-[450] md:h-[550px] lg:h-[550px]"></div>
           <Image
             src={fahim}
             width={450}
             height={300}
             alt="myPic"
-            className="md:ml-auto lg:ml-auto rounded-lg h-[520px] w-96 md:w-[450px] lg:[450px] md:h-[550px] lg:h-[550px] md:mt-8 lg:mt-8 md:mr-8 lg:mr-8 shadow mt-20 ml-10"
+            className="md:ml-auto lg:ml-auto rounded-xl h-[520px] w-full md:w-[485px] lg:w-[485px] md:h-[540px] lg:h-[540px] md:mt-[5.5rem] lg:mt-[5.5rem] shadow-2xl mt-16"
           />
         </div>
       </section>

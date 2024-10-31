@@ -93,7 +93,7 @@ export default function Navbar() {
         </nav>
 
         <AiOutlineMenu
-          className=" text-2xl md:hidden lg:hidden cursor-pointer "
+          className=" text-3xl md:hidden lg:hidden cursor-pointer "
           onClick={() => setIsHide(true)}
         />
 
