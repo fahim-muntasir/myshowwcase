@@ -17,9 +17,9 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-4">Let&lsquo;s Connect</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? Get in touch and let's create something amazing together.
+            Ready to start your next project? Get in touch and let&lsquo;s create something amazing together.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
