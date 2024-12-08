@@ -7,7 +7,7 @@ import {
 
 export default function Footer() {
     return (
-        <section className="bg-gray-900 py-10 mt-40">
+        <section className="bg-gray-900 py-10">
             <div className="container mx-auto xl:max-w-screen-lg flex justify-between items-center px-5 md:px-0 lg:px-0 ">
                 <p className="text-white text-sm">&#169; Fahim muntasir 2023</p>
                 <div>
