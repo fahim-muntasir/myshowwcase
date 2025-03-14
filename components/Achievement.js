@@ -59,7 +59,7 @@ export default function Achievement() {
             width={500}
             height={150}
             alt="review"
-            className=" shadow-md hover:scale-105 transition"
+            className=" shadow-md hover:scale-105 transition grayscale hover:grayscale-0"
           />
         </div>
         <div className="px-5 md:px-0 lg:px-0">
@@ -68,7 +68,7 @@ export default function Achievement() {
             width={450}
             height={150}
             alt="review"
-            className="shadow-md hover:scale-105 transition w-full md:w-[450px] lg:w-[450px]"
+            className="shadow-md hover:scale-105 transition w-full md:w-[450px] lg:w-[450px] grayscale hover:grayscale-0"
           />
         </div>
       </div>

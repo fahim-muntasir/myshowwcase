@@ -1,10 +1,11 @@
 import { FaReact, FaStripe } from "react-icons/fa";
 import { SiTailwindcss, SiRedux, SiSupabase } from "react-icons/si";
+import Image from "next/image";
 
 const portfolios = [
   {
     id: 1,
-    name: "QuizMaker",
+    name: "QuizVerse",
     image: "project2.jpg",
     summary: "This quiz web app simplifies quiz creation, sharing, and participation, dynamic result generation",
     description:`This is a quiz web app. What does this project do and which problem solves it? well, sometimes we need to create quiz sets for students or friends and share that quiz with each other to participate. This web app does the same thing. Have a glance at the following features of this project.
@@ -34,28 +35,43 @@ const portfolios = [
     videoLink: "project2.mp4",
     technology: [
       {
-        name: "React.js",
+        name: "Next.js",
         color: "#149eca",
-        icon: <FaReact />
+        icon: <Image src="/images/next-js-icon.svg" width={27} height={27} alt="next js" />
+      },
+      {
+        name: "TypeScript",
+        color: "#764abc",
+        icon: <Image src="/images/typescript-icon.svg" alt="typeScript icon" width={22} height={22} />
       },
       {
         name: "TailwindCSS",
         color: "#38bdf8",
-        icon: <SiTailwindcss />
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
       },
       {
         name: "Redux",
         color: "#764abc",
-        icon: <SiRedux />
+        icon: <Image src="/images/redux-icon.svg" alt="redux icon" width={26} height={26} />
       },
       {
-        name: "Supabase",
-        color: "#3ecf90",
-        icon: <SiSupabase />
+        name: "Node.js",
+        color: "#764abc",
+        icon: <Image src="/images/node-js-icon.svg" alt="nodejs icon" width={30} height={30} />
+      },
+      {
+        name: "MongoDB",
+        color: "#764abc",
+        icon: <Image src="/images/mongodb-icon.svg" alt="mongodb icon" width={22} height={22} />
+      },
+      {
+        name: "Docker",
+        color: "#764abc",
+        icon: <Image src="/images/docker-icon.svg" alt="docker icon" width={36} height={36} />
       },
     ],
-    liveLink: "https://endearing-wisp-deda6d.netlify.app",
-    githubLink: "https://github.com/fahim-muntasir/quiz-application",
+    liveLink: "https://github.com/fahim-muntasir/quizVerse",
+    githubLink: "https://github.com/fahim-muntasir/quizVerse",
   },
   {
     id: 2,
@@ -90,26 +106,27 @@ const portfolios = [
       {
         name: "React.js",
         color: "#149eca",
-        icon: <FaReact />
+        icon: <Image src="/images/react-js-icon.svg" alt="react-js icon" width={32} height={32} />
       },
       {
         name: "TailwindCSS",
         color: "#38bdf8",
-        icon: <SiTailwindcss />
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
       },
       {
         name: "Redux",
         color: "#764abc",
-        icon: <SiRedux />
+        icon: <Image src="/images/redux-icon.svg" alt="redux icon" width={26} height={26} />
       },
       {
         name: "Stripe",
         color: "#6860ff",
-        icon: <FaStripe />
+        icon: <Image src="/images/stripe-icon.svg" alt="stripe icon" width={32} height={32} />
       },
       {
         name: "json-server",
         color: "black",
+        icon: <Image src="/images/json-icon.svg" alt="json icon" width={28} height={28} />
       },
     ],
     liveLink: "",
@@ -140,20 +157,22 @@ const portfolios = [
       {
         name: "React.js",
         color: "#149eca",
-        icon: <FaReact />
+        icon: <Image src="/images/react-js-icon.svg" alt="react-js icon" width={32} height={32} />
       },
       {
         name: "Tone.js",
         color: "#f734d7",
+        icon: <Image src="/images/tonejs-icon.png" alt="tone js icon" width={22} height={22} />
       },
       {
         name: "TailwindCSS",
         color: "#38bdf8",
-        icon: <SiTailwindcss />
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
       },
       {
         name: "json-server",
         color: "black",
+        icon: <Image src="/images/json-icon.svg" alt="json icon" width={28} height={28} />
       },
     ],
     liveLink: "",

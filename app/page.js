@@ -65,7 +65,7 @@ export default function Home() {
               Contact
             </a>
             <a
-              href="https://drive.google.com/file/d/1rzq0Hxh9NvVco5IYxc4Zp51XmXwmvQ2m/view?usp=sharing"
+              href="https://drive.google.com/file/d/1oENn3JYJCVAvbvjrqSfgOMKLXki1z3Jr/view?usp=sharing"
               target="blank"
               className="bg-sky-500 py-2 px-4 text-white hover:bg-sky-600 "
             >
@@ -79,7 +79,7 @@ export default function Home() {
             width={450}
             height={300}
             alt="myPic"
-            className="md:ml-auto lg:ml-auto rounded-xl h-[520px] w-full md:w-[485px] lg:w-[485px] md:h-[540px] lg:h-[540px] md:mt-[5.5rem] lg:mt-[5.5rem] shadow-2xl mt-16"
+            className="md:ml-auto lg:ml-auto rounded-xl h-[520px] w-full md:w-[485px] lg:w-[485px] md:h-[540px] lg:h-[540px] md:mt-[5.5rem] lg:mt-[5.5rem] shadow-2xl mt-16 grayscale hover:grayscale-0 transition-all"
           />
         </div>
       </section>
