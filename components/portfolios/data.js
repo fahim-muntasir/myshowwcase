@@ -7,6 +7,7 @@ const portfolios = [
     id: 1,
     name: "QuizVerse",
     image: "project2.jpg",
+    thumbnail: "quiz-verse.png",
     summary: "This quiz web app simplifies quiz creation, sharing, and participation, dynamic result generation",
     description:`This is a quiz web app. What does this project do and which problem solves it? well, sometimes we need to create quiz sets for students or friends and share that quiz with each other to participate. This web app does the same thing. Have a glance at the following features of this project.
 
@@ -75,7 +76,158 @@ const portfolios = [
   },
   {
     id: 2,
+    name: "FlowForge",
+    thumbnail: "FlowForge.png",
+    summary: "A fully responsive, pixel-perfect web app converted from Figma to Next.js using TypeScript and Tailwind CSS.",
+    description: `This is a SaaS project manager web app. What does this project do and which problem solves it? well, You can create your team and can add members as well. Under each team, you can make projects after that we are all team members and owner is gonna see the project progress the owner can change it by drag and drop.
+
+    We have two plans Free and plus. As a free member will be able to create 5 teams. If update plans then will be able to create the unlimited team.
+    
+    ✨ Key Features:
+    
+    • Create teams and add members
+    • Create projects and change the project status by drag and drop.
+    • Search and delete the project.
+    • Update and manage subscription plans.
+    
+    💪 Major Challenges Overcome:
+    
+    • Subscription System Implementation
+    • Drag-and-Drop Functionality
+    • Payment Event Tracking
+    
+    ⚙️ Technologies Used:
+    
+    • Front-end: Tailwind CSS for sleek styling, React.js for dynamic UI rendering, Redux for efficient state management, and React DnD for seamless drag-and- drop functionality.
+    
+    • Back-end: json-server (To focus on only frontend functionality and stripe I have used it).
+    
+    • Payment gateway: Stripe`,
+    videoLink: "project1.mp4",
+    technology: [
+      {
+        name: "Next.js",
+        color: "#149eca",
+        icon: <Image src="/images/next-js-icon.svg" width={27} height={27} alt="next js" />
+      },
+      {
+        name: "TypeScript",
+        color: "#764abc",
+        icon: <Image src="/images/typescript-icon.svg" alt="typeScript icon" width={22} height={22} />
+      },
+      {
+        name: "TailwindCSS",
+        color: "#38bdf8",
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+      }
+    ],
+    liveLink: "https://flow-forge-phi.vercel.app",
+    githubLink: "https://github.com/fahim-muntasir/FlowForge",
+  },
+  {
+    id: 3,
+    name: "Ai Blog Website",
+    thumbnail: "ai-blog-website.png",
+    summary: "A fully responsive, pixel-perfect web app converted from Figma to Next.js using TypeScript and Tailwind CSS.",
+    description: `This is a SaaS project manager web app. What does this project do and which problem solves it? well, You can create your team and can add members as well. Under each team, you can make projects after that we are all team members and owner is gonna see the project progress the owner can change it by drag and drop.
+
+    We have two plans Free and plus. As a free member will be able to create 5 teams. If update plans then will be able to create the unlimited team.
+    
+    ✨ Key Features:
+    
+    • Create teams and add members
+    • Create projects and change the project status by drag and drop.
+    • Search and delete the project.
+    • Update and manage subscription plans.
+    
+    💪 Major Challenges Overcome:
+    
+    • Subscription System Implementation
+    • Drag-and-Drop Functionality
+    • Payment Event Tracking
+    
+    ⚙️ Technologies Used:
+    
+    • Front-end: Tailwind CSS for sleek styling, React.js for dynamic UI rendering, Redux for efficient state management, and React DnD for seamless drag-and- drop functionality.
+    
+    • Back-end: json-server (To focus on only frontend functionality and stripe I have used it).
+    
+    • Payment gateway: Stripe`,
+    videoLink: "project1.mp4",
+    technology: [
+      {
+        name: "Next.js",
+        color: "#149eca",
+        icon: <Image src="/images/next-js-icon.svg" width={27} height={27} alt="next js" />
+      },
+      {
+        name: "TypeScript",
+        color: "#764abc",
+        icon: <Image src="/images/typescript-icon.svg" alt="typeScript icon" width={22} height={22} />
+      },
+      {
+        name: "TailwindCSS",
+        color: "#38bdf8",
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+      }
+    ],
+    liveLink: "https://ai-blog-frontend.vercel.app",
+    githubLink: "https://github.com/fahim-muntasir/ai_blog_frontend",
+  },
+  {
+    id: 4,
+    name: "PhantomFetch",
+    thumbnail: "p-fetch.png",
+    summary: "Pixel-perfect web app built from Figma using React.js, and Tailwind CSS.Optimized for fast and a smooth experience.",
+    description: `This is a SaaS project manager web app. What does this project do and which problem solves it? well, You can create your team and can add members as well. Under each team, you can make projects after that we are all team members and owner is gonna see the project progress the owner can change it by drag and drop.
+
+    We have two plans Free and plus. As a free member will be able to create 5 teams. If update plans then will be able to create the unlimited team.
+    
+    ✨ Key Features:
+    
+    • Create teams and add members
+    • Create projects and change the project status by drag and drop.
+    • Search and delete the project.
+    • Update and manage subscription plans.
+    
+    💪 Major Challenges Overcome:
+    
+    • Subscription System Implementation
+    • Drag-and-Drop Functionality
+    • Payment Event Tracking
+    
+    ⚙️ Technologies Used:
+    
+    • Front-end: Tailwind CSS for sleek styling, React.js for dynamic UI rendering, Redux for efficient state management, and React DnD for seamless drag-and- drop functionality.
+    
+    • Back-end: json-server (To focus on only frontend functionality and stripe I have used it).
+    
+    • Payment gateway: Stripe`,
+    videoLink: "project1.mp4",
+    technology: [
+      {
+        name: "React.js",
+        color: "#149eca",
+        icon: <Image src="/images/react-js-icon.svg" alt="react-js icon" width={32} height={32} />
+      },
+      {
+        name: "TailwindCSS",
+        color: "#38bdf8",
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+      },
+      {
+        name: "Vite",
+        color: "#38bdf8",
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+      }
+    ],
+    liveLink: "",
+    githubLink: "https://github.com/fahim-muntasir/pFetch",
+  },
+  {
+    id: 5,
     name: "Project Manager",
+    thumbnail: "project-manager.png",
     summary: "SaaS project manager simplifies project tracking with drag-and-drop updates and subscription management",
     description: `This is a SaaS project manager web app. What does this project do and which problem solves it? well, You can create your team and can add members as well. Under each team, you can make projects after that we are all team members and owner is gonna see the project progress the owner can change it by drag and drop.
 
@@ -133,51 +285,101 @@ const portfolios = [
     githubLink: "https://github.com/fahim-muntasir/project-management",
   },
   {
-    id: 3,
-    name: "MusicHub",
-    image: "funMusic.jpg",
-    summary: "MusicHub transforms music creation with Tone.js. Simplified composition saving and editing",
-    description:`This is a music-sounds web app 'MusicHub!' powered by React.js and Tone.js.
+    id: 5,
+    name: "Studio",
+    thumbnail: "studio.png",
+    summary: "A fully responsive, pixel-perfect agency landing page built with Next.js, TypeScript, and Tailwind CSS.",
+    description: `This is a SaaS project manager web app. What does this project do and which problem solves it? well, You can create your team and can add members as well. Under each team, you can make projects after that we are all team members and owner is gonna see the project progress the owner can change it by drag and drop.
 
-    🚀 Key Features:
-    Explore music creation with Guitar, Piano, and Drums. Save your compositions for later playback and easy editing.
+    We have two plans Free and plus. As a free member will be able to create 5 teams. If update plans then will be able to create the unlimited team.
     
-    💪 Major Challenge:
+    ✨ Key Features:
     
-    • Generating sounds with Tone.js API.
-    • Implementing backend storage for saving and playback of created sound data.
+    • Create teams and add members
+    • Create projects and change the project status by drag and drop.
+    • Search and delete the project.
+    • Update and manage subscription plans.
     
-    ⚙️ Tech Stack:
+    💪 Major Challenges Overcome:
     
-    • Front-end: React.js and Tailwind CSS.
-    • Back-end: JSON-server for seamless data storage.
-    • Music: Tone.js web audio framework.`,
+    • Subscription System Implementation
+    • Drag-and-Drop Functionality
+    • Payment Event Tracking
+    
+    ⚙️ Technologies Used:
+    
+    • Front-end: Tailwind CSS for sleek styling, React.js for dynamic UI rendering, Redux for efficient state management, and React DnD for seamless drag-and- drop functionality.
+    
+    • Back-end: json-server (To focus on only frontend functionality and stripe I have used it).
+    
+    • Payment gateway: Stripe`,
     videoLink: "project1.mp4",
     technology: [
       {
-        name: "React.js",
+        name: "Next.js",
         color: "#149eca",
-        icon: <Image src="/images/react-js-icon.svg" alt="react-js icon" width={32} height={32} />
+        icon: <Image src="/images/next-js-icon.svg" width={27} height={27} alt="next js" />
       },
       {
-        name: "Tone.js",
-        color: "#f734d7",
-        icon: <Image src="/images/tonejs-icon.png" alt="tone js icon" width={22} height={22} />
+        name: "TypeScript",
+        color: "#764abc",
+        icon: <Image src="/images/typescript-icon.svg" alt="typeScript icon" width={22} height={22} />
       },
       {
         name: "TailwindCSS",
         color: "#38bdf8",
         icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
-      },
-      {
-        name: "json-server",
-        color: "black",
-        icon: <Image src="/images/json-icon.svg" alt="json icon" width={28} height={28} />
-      },
+      }
     ],
-    liveLink: "",
-    githubLink: "https://github.com/fahim-muntasir/make-music",
+    liveLink: "https://studio-five-dun.vercel.app",
+    githubLink: "https://github.com/fahim-muntasir/studio",
   },
+  // {
+  //   id: 3,
+  //   name: "MusicHub",
+  //   image: "funMusic.jpg",
+  //   summary: "MusicHub transforms music creation with Tone.js. Simplified composition saving and editing",
+  //   description:`This is a music-sounds web app 'MusicHub!' powered by React.js and Tone.js.
+
+  //   🚀 Key Features:
+  //   Explore music creation with Guitar, Piano, and Drums. Save your compositions for later playback and easy editing.
+    
+  //   💪 Major Challenge:
+    
+  //   • Generating sounds with Tone.js API.
+  //   • Implementing backend storage for saving and playback of created sound data.
+    
+  //   ⚙️ Tech Stack:
+    
+  //   • Front-end: React.js and Tailwind CSS.
+  //   • Back-end: JSON-server for seamless data storage.
+  //   • Music: Tone.js web audio framework.`,
+  //   videoLink: "project1.mp4",
+  //   technology: [
+  //     {
+  //       name: "React.js",
+  //       color: "#149eca",
+  //       icon: <Image src="/images/react-js-icon.svg" alt="react-js icon" width={32} height={32} />
+  //     },
+  //     {
+  //       name: "Tone.js",
+  //       color: "#f734d7",
+  //       icon: <Image src="/images/tonejs-icon.png" alt="tone js icon" width={22} height={22} />
+  //     },
+  //     {
+  //       name: "TailwindCSS",
+  //       color: "#38bdf8",
+  //       icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+  //     },
+  //     {
+  //       name: "json-server",
+  //       color: "black",
+  //       icon: <Image src="/images/json-icon.svg" alt="json icon" width={28} height={28} />
+  //     },
+  //   ],
+  //   liveLink: "",
+  //   githubLink: "https://github.com/fahim-muntasir/make-music",
+  // },
 ];
 
 export default portfolios;

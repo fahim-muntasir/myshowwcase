@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 // import Project from "@/components/Project";
 import Review from "@/components/Review";
+import Testimonials from "@/components/Testimonials";
 import Skills from "@/components/Skills";
 import fahim from "@/public/images/fahimmuntasir.png";
 import Image from "next/image";
@@ -79,7 +80,7 @@ export default function Home() {
             width={450}
             height={300}
             alt="myPic"
-            className="md:ml-auto lg:ml-auto rounded-xl h-[520px] w-full md:w-[485px] lg:w-[485px] md:h-[540px] lg:h-[540px] md:mt-[5.5rem] lg:mt-[5.5rem] shadow-2xl mt-16 grayscale hover:grayscale-0 transition-all"
+            className="md:ml-auto lg:ml-auto rounded-xl h-[520px] w-full md:w-[485px] lg:w-[485px] md:h-[540px] lg:h-[540px] md:mt-[5.5rem] lg:mt-[5.5rem] shadow-2xl mt-16 grayscale hover:grayscale-0 transition-all border-4 border-gray-100 rotate-1 hover:rotate-0 duration-500 ease-in-out"
           />
         </div>
       </section>
@@ -94,7 +95,7 @@ export default function Home() {
       {/* project section  */}
 
       {/* review section  */}
-      <Review />
+      <Testimonials />
       {/* review section  */}
 
       {/* achievement section  */}

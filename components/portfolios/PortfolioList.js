@@ -25,9 +25,9 @@ export default function PortfolioList() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-5 md:px-0 lg:px-0">
-          {portfolios?.map((item) => (
-            <Portfolio key={item?.id} data={item} />
+        <div className="grid grid-cols-1 gap-4 px-5 md:px-0 lg:px-0">
+          {portfolios?.map((item, index) => (
+            <Portfolio key={item?.id} data={item} right={(index+1) % 2 === 0 && true} />
           ))}
         </div>
 
