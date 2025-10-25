@@ -76,6 +76,39 @@ const portfolios = [
   },
   {
     id: 2,
+    name: "Pill-Splitter",
+    image: "project2.jpg",
+    thumbnail: "pill-splitter.png",
+    summary: "This project was part of the Frontend Software Engineer Challenge.",
+    description:`Hello world`,
+    videoLink: "project2.mp4",
+    technology: [
+      {
+        name: "React.js",
+        color: "#149eca",
+        icon: <Image src="/images/react-js-icon.svg" alt="react-js icon" width={32} height={32} />
+      },
+      {
+        name: "TypeScript",
+        color: "#764abc",
+        icon: <Image src="/images/typescript-icon.svg" alt="typeScript icon" width={22} height={22} />
+      },
+      {
+        name: "TailwindCSS",
+        color: "#38bdf8",
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+      },
+      {
+        name: "Vite",
+        color: "#38bdf8",
+        icon: <Image src="/images/tailwindcss-icon.svg" alt="tailwindcss icon" width={28} height={28} />
+      },
+    ],
+    liveLink: "https://pill-splitter1.netlify.app",
+    githubLink: "https://github.com/fahim-muntasir/pill-splitter",
+  },
+  {
+    id: 3,
     name: "FlowForge",
     thumbnail: "FlowForge.png",
     summary: "A fully responsive, pixel-perfect web app converted from Figma to Next.js using TypeScript and Tailwind CSS.",
@@ -125,7 +158,7 @@ const portfolios = [
     githubLink: "https://github.com/fahim-muntasir/FlowForge",
   },
   {
-    id: 3,
+    id: 4,
     name: "Ai Blog Website",
     thumbnail: "ai-blog-website.png",
     summary: "A fully responsive, pixel-perfect web app converted from Figma to Next.js using TypeScript and Tailwind CSS.",
@@ -175,7 +208,7 @@ const portfolios = [
     githubLink: "https://github.com/fahim-muntasir/ai_blog_frontend",
   },
   {
-    id: 4,
+    id: 5,
     name: "PhantomFetch",
     thumbnail: "p-fetch.png",
     summary: "Pixel-perfect web app built from Figma using React.js, and Tailwind CSS.Optimized for fast and a smooth experience.",
@@ -225,7 +258,7 @@ const portfolios = [
     githubLink: "https://github.com/fahim-muntasir/pFetch",
   },
   {
-    id: 5,
+    id: 6,
     name: "Project Manager",
     thumbnail: "project-manager.png",
     summary: "SaaS project manager simplifies project tracking with drag-and-drop updates and subscription management",
@@ -285,7 +318,7 @@ const portfolios = [
     githubLink: "https://github.com/fahim-muntasir/project-management",
   },
   {
-    id: 5,
+    id: 7,
     name: "Studio",
     thumbnail: "studio.png",
     summary: "A fully responsive, pixel-perfect agency landing page built with Next.js, TypeScript, and Tailwind CSS.",
